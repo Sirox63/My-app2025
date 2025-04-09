@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق اختبار المصطلحات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- إعدادات PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+    
+    <!-- مكتبة AdMob -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-app-pub-3551784562611863/1213422004" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- زر العودة إلى الصفحة الرئيسية -->
+    <button id="home-btn" class="hidden">عودة</button>
+
+    <div id="welcome-page" class="page">
+        <p>مرحبا بك في تطبيق اختبار المصطلحات، تم إنشاء هذا التطبيق خصيصا لتعلم مصطلحات اللغة الإنجليزية والفرنسية لاعتبارها الأساس لفهم موضوع امتحان البكالوريا، لتحقيق أقصى استفادة من التطبيق عليك بالإستمرارية في التعلم. خصص وقتا في الصباح واختبر بعض المصطلحات، واستمر في ذلك يوميا 🫡. التطبيق مخصص للشعب العلمية بالدرجة الأولى ويعمل بدون انترنت،بالتوفيق❤️😸 </p>
+        <button id="start-btn">بدأ</button>
+        
+        <!-- إعلان Banner -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-3551784562611863/1213422004"
+                 data-ad-slot="1213422004"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div id="main-page" class="page hidden">
+        <div class="header">
+            <span>الصفحة الرئيسية</span>
+            <button id="menu-btn">☰</button>
+        </div>
+        <div id="menu" class="hidden">
+            <button id="details-btn">تفاصيل أكثر</button>
+        </div>
+        <div class="content">
+            <h2>اختر المادة</h2>
+            <div class="options">
+                <button id="english-btn">اللغة الإنجليزية</button>
+                <button id="french-btn">اللغة الفرنسية</button>
+            </div>
+        </div>
+        
+        <!-- إعلان Banner -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-3551784562611863/1213422004"
+                 data-ad-slot="1213422004"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div id="english-units-page" class="page hidden">
+        <div class="header">
+            <span>اللغة الإنجليزية</span>
+        </div>
+        <div class="content">
+            <h2>اختر الوحدة</h2>
+            <div class="options">
+                <button id="unit1-btn">الوحدة الأولى</button>
+                <button id="unit2-btn">الوحدة الثانية</button>
+                <button id="unit3-btn">الوحدة الثالثة</button>
+            </div>
+        </div>
+        
+        <!-- إعلان Banner -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-3551784562611863/1213422004"
+                 data-ad-slot="1213422004"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+<div id="details-page" class="page hidden">
+        <p>«مرحبا بك ، في هذا التطبيق تم انشاء اختبارات لمصطلحات الإنجليزية والفرنسية ، في الفرنسية تم وضع مصطلحات النص التاريخي فقط لاعتباره مضمون في امتحان البكالوريا واغلب التلاميذ يختارون موضوع النص التاريخي .
+        وفي الإنجليزية تم وضع مصطلحات جميع الوحدات الثلاث
+        -اذا استفدت خلي دعوة خير - »»»»»
+        تم تطوير هذا التطبيق من طرف ياسر حسناوي ،اذا كنت تريد دعم المطور او التواصل معه على فيسبوك يرجى الضغط على هذا الزر .</p>
+        <button id="facebook-btn">تواصل معي</button>
+        
+        <!-- إعلان Banner -->
+        <div class="ad-container">
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-app-pub-3551784562611863/1213422004"
+                 data-ad-slot="1213422004"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div id="questions-page" class="page hidden">
+        <div id="question-box">
+            <p id="question-text"></p>
+        </div>
+        <div id="options-container">
+            <!-- خيارات الإجابة ستظهر هنا -->
+        </div>
+        <div id="feedback-box" class="hidden"></div>
+        <button id="next-btn" class="hidden">التالي</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // تسجيل Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(registration => console.log('ServiceWorker registered'))
+                    .catch(err => console.log('ServiceWorker registration failed: ', err));
+            });
+        }
+    </script>
+</body>
+</html>
